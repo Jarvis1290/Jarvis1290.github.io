@@ -22,5 +22,13 @@
       "package_name": "io.github.adi1290_vsx.planning",
       "sha256_cert_fingerprints": ["7E:58:A5:03:CB:61:53:56:FD:8B:53:3A:E6:DD:EC:9D:C4:86:F6:4D:3C:AF:A8:CA:1C:C2:49:70:CD:B4:B1:DF"]
     }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "io.github.adi1290_vsx.twa.kardex",
+      "sha256_cert_fingerprints": ["A6:13:02:5F:DB:6F:1C:45:23:2F:1E:B3:58:45:61:ED:11:27:34:B0:26:7C:A9:82:24:8C:2B:89:57:EC:EB:C2"]
+    }
   }
 ]
