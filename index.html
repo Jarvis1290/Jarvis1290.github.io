@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Les apps d'Adi</title>
+<meta name="description" content="Petites apps d'atelier : planning, porte-outils CNC, suivi véhicules, Kardex, calculs.">
+<meta name="theme-color" content="#14171c">
+<link rel="icon" href="/outils/kardex/icon-192.png">
+<style>
+:root{ --bg:#14171c; --card:#1d2128; --card2:#252a33; --fg:#eef0f3; --muted:#9aa3ad; }
+*{box-sizing:border-box}
+body{margin:0; min-height:100vh; background:var(--bg); color:var(--fg);
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  padding:calc(28px + env(safe-area-inset-top)) 16px calc(40px + env(safe-area-inset-bottom));}
+main{max-width:720px; margin:0 auto;}
+h1{margin:0 0 6px; font-size:30px; letter-spacing:.01em;}
+h1 span{background:linear-gradient(90deg,#6fae52,#3b9be0,#f2a33a); -webkit-background-clip:text; background-clip:text; color:transparent;}
+.sub{color:var(--muted); margin:0 0 26px; font-size:15px; line-height:1.45;}
+.grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:12px;}
+a.app{display:flex; align-items:center; gap:14px; text-decoration:none; color:inherit;
+  background:var(--card); border-radius:16px; padding:14px;
+  border-left:6px solid var(--c); transition:transform .1s, background .15s;}
+a.app:hover{background:var(--card2);}
+a.app:active{transform:scale(.98);}
+a.app:focus-visible{outline:2px solid var(--c); outline-offset:2px;}
+a.app img{width:56px; height:56px; border-radius:12px; flex:none; background:#0e1014;}
+a.app b{display:block; font-size:18px; margin-bottom:2px;}
+a.app small{color:var(--muted); font-size:14px; line-height:1.35;}
+.help{margin-top:28px; background:var(--card); border-radius:16px; padding:14px 16px; font-size:14px; color:var(--muted); line-height:1.5;}
+.help b{color:var(--fg);}
+footer{color:var(--muted); font-size:13px; margin-top:24px; text-align:center;}
+footer a{color:var(--muted);}
+@media (max-width:360px){ .grid{grid-template-columns:1fr;} }
+</style>
+</head>
+<body>
+<main>
+  <h1>🛠️ <span>Les apps d'Adi</span></h1>
+  <p class="sub">Petits outils pour l'atelier et le quotidien. Touchez une app pour l'ouvrir.</p>
+
+  <div class="grid">
+    <a class="app" href="/outils/planning-horaire/" style="--c:#6fae52">
+      <img src="/outils/planning-horaire/icon-192.png" alt="">
+      <div><b>Planning Horaire</b><small>Heures de la semaine, pot d'heures sup.</small></div>
+    </a>
+    <a class="app" href="/outils/porte-outils/" style="--c:#3b9be0">
+      <img src="/outils/porte-outils/icon-192.png" alt="">
+      <div><b>Porte-outils CNC</b><small>Scan QR, montages, catalogue d'outils.</small></div>
+    </a>
+    <a class="app" href="/outils/suivi-vehicules/" style="--c:#f2a33a">
+      <img src="/outils/suivi-vehicules/icon-192.png" alt="">
+      <div><b>Suivi Véhicules</b><small>Pleins, conso et coûts du Kangoo et de la GS.</small></div>
+    </a>
+    <a class="app" href="/outils/kardex/" style="--c:#f5a524">
+      <img src="/outils/kardex/icon-192.png" alt="">
+      <div><b>Kardex</b><small>Où est rangé quoi : article, étage, photos des plateaux.</small></div>
+    </a>
+    <a class="app" href="/outils/calcul-atelier/" style="--c:#ffb547">
+      <img src="/outils/calcul-atelier/icon-192.png" alt="">
+      <div><b>Calcul Atelier</b><small>Corrections d'outils et de cotes, tolérances ISO, taraudage.</small></div>
+    </a>
+  </div>
+
+  <div class="help">
+    <b>Installer une app sur le téléphone :</b> ouvrez-la, puis dans le menu du navigateur choisissez
+    « Ajouter à l'écran d'accueil » (Android : menu ⋮ · iPhone : bouton Partager).
+    Elle marche ensuite même sans réseau.
+  </div>
+
+  <footer>Données gardées sur le téléphone, rien n'est envoyé ailleurs.</footer>
+</main>
+</body>
+</html>
